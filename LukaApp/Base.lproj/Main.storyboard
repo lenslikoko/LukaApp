@@ -1,24 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LukaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luka" translatesAutoresizingMaskIntoConstraints="NO" id="xfY-9p-6Fj">
+                                <rect key="frame" x="54.5" y="150" width="305" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="BiI-f5-avO"/>
+                                    <constraint firstAttribute="height" constant="225" id="CKf-B8-zR8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Хэллоу, народец!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cO-Je-VSv">
+                                <rect key="frame" x="54.5" y="64" width="305" height="67"/>
+                                <color key="backgroundColor" red="1" green="0.62188041149999995" blue="0.91341706869999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="dbT-n4-93h"/>
+                                    <constraint firstAttribute="width" constant="305" id="gKu-Uv-27N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAN-q5-Vrq">
+                                <rect key="frame" x="54.5" y="785" width="305" height="57"/>
+                                <color key="backgroundColor" red="0.60159682650000001" green="0.98106676339999999" blue="0.71679608220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="aQc-wD-f5Z"/>
+                                    <constraint firstAttribute="height" constant="57" id="inS-ks-t2G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="25"/>
+                                <state key="normal" title="Скажи по-белорусски">
+                                    <color key="titleColor" red="0.98106676339999999" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Gq-fW-9aL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Да, это я приказал" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCR-o8-FIk">
+                                <rect key="frame" x="54.5" y="434" width="305" height="56"/>
+                                <color key="backgroundColor" red="0.60159682650000001" green="0.98106676339999999" blue="0.71679608220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="lSA-0h-vhg"/>
+                                    <constraint firstAttribute="width" constant="305" id="vFA-mu-Chf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Да их там человек 20, не больше" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ir-x9-s7w">
+                                <rect key="frame" x="54.5" y="514" width="305" height="112"/>
+                                <color key="backgroundColor" red="0.60159682650000001" green="0.98106676339999999" blue="0.71679608220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="UwR-SP-Hqd"/>
+                                    <constraint firstAttribute="height" constant="112" id="uuO-QN-36F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Беларусь - ядерная держава" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xP3-VG-Q84">
+                                <rect key="frame" x="55" y="652" width="305" height="112"/>
+                                <color key="backgroundColor" red="0.60159682650000001" green="0.98106676339999999" blue="0.71679608220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="4ad-4v-12t"/>
+                                    <constraint firstAttribute="height" constant="112" id="58t-ie-A14"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bd3-jM-YWk">
+                                <rect key="frame" x="55" y="398" width="305" height="366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95118988370000002" green="0.98106676339999999" blue="0.77465618479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Ты какойта слышкам актывны! Актывыст чтоли? Аппазицианер                 наверна.                                 Я такое не люблю!!            На 15 суток сядешь и подумаешь</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.95118988367450563" green="0.98106676339999999" blue="0.77465618481985821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xfY-9p-6Fj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Rq-og-GhJ"/>
+                            <constraint firstItem="9cO-Je-VSv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bu7-DZ-OId"/>
+                            <constraint firstItem="QAN-q5-Vrq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ENp-ay-ikO"/>
+                            <constraint firstItem="xP3-VG-Q84" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FZP-aR-Xx3"/>
+                            <constraint firstItem="xP3-VG-Q84" firstAttribute="top" secondItem="1Ir-x9-s7w" secondAttribute="bottom" constant="24" id="I7C-oF-p9J"/>
+                            <constraint firstItem="LCR-o8-FIk" firstAttribute="top" secondItem="xfY-9p-6Fj" secondAttribute="bottom" constant="59" id="K3U-hn-PgH"/>
+                            <constraint firstItem="xfY-9p-6Fj" firstAttribute="top" secondItem="9cO-Je-VSv" secondAttribute="bottom" constant="19" id="LV4-3z-Y7G"/>
+                            <constraint firstItem="QAN-q5-Vrq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nzu-Un-ST5"/>
+                            <constraint firstItem="LCR-o8-FIk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OjU-Sd-QFN"/>
+                            <constraint firstItem="1Ir-x9-s7w" firstAttribute="top" secondItem="LCR-o8-FIk" secondAttribute="bottom" constant="24" id="Om1-ZJ-W9R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QAN-q5-Vrq" secondAttribute="bottom" constant="20" id="Sm2-Iy-alZ"/>
+                            <constraint firstItem="xfY-9p-6Fj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T2H-cZ-Ykh"/>
+                            <constraint firstItem="9cO-Je-VSv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gNY-FB-jQp"/>
+                            <constraint firstItem="1Ir-x9-s7w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lXC-jj-7Lk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="QAN-q5-Vrq" id="uaN-Tr-ZO4"/>
+                        <outlet property="finalText" destination="Bd3-jM-YWk" id="Jar-AZ-byF"/>
+                        <outlet property="firstLabel" destination="LCR-o8-FIk" id="ch4-DI-1Gh"/>
+                        <outlet property="imageLuka" destination="xfY-9p-6Fj" id="itv-95-3Ki"/>
+                        <outlet property="label" destination="9cO-Je-VSv" id="Jhp-uq-kWk"/>
+                        <outlet property="secondLabel" destination="1Ir-x9-s7w" id="NXz-I9-Vdq"/>
+                        <outlet property="thirdLabel" destination="xP3-VG-Q84" id="G89-ci-KtE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="528.98550724637687" y="71.651785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="luka" width="600" height="387"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
